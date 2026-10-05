@@ -1,0 +1,16 @@
+[project]
+name = "laptop-diagnosis-ai"
+version = "1.0.0"
+description = "AI-Based Laptop Problem Diagnosis System Using AO* Search"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.2.0",
+    "sqlalchemy>=2.0.28",
+    "python-multipart>=0.0.9"
+]
+
+[tool.vercel]
+entrypoint = "backend.main:app"
